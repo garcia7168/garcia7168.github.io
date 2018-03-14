@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>...::: bobby garcia - elearning :::...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+var keepstatic=0 //specify whether menu should stay static (works only in IE4+)
+var menucolor="#665A6C" //specify menu color
+var submenuwidth=150 //specify sub menus' width
+</script>
+<script type="text/javascript">
+/***********************************************
+* Image Thumbnail Viewer II script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+//Specify image paths and optional link (set link to "" for no link):
+var dynimages=new Array()
+dynimages[0]=["images/elearn-2aecm.gif", ""]
+dynimages[1]=["images/elearn-2lau7.gif", ""]
+dynimages[2]=["images/elearn-2aim9.gif", ""]
+dynimages[3]=["images/elearn-2est.gif", ""]
+dynimages[4]=["images/elearn-2mav.gif", ""]
+dynimages[5]=["images/elearn-2para.gif", ""]
+
+//Preload images ("yes" or "no"):
+var preloadimg="no"
+
+//Set optional link target to be added to all images with a link:
+var optlinktarget=""
+
+//Set image border width
+var imgborderwidth=0
+
+//Optionally, change 1.0 and 0.7 below to affect Wipe gradient size and duration in seconds in IE5.5+:
+var filterstring="progid:DXImageTransform.Microsoft.GradientWipe(GradientSize=1.0 Duration=0.7)"
+
+///////No need to edit beyond here/////
+
+if (preloadimg=="yes"){
+for (x=0; x<dynimages.length; x++){
+var myimage=new Image()
+myimage.src=dynimages[x][0]
+}
+}
+
+function returnimgcode(theimg){
+var imghtml=""
+if (theimg[1]!="")
+imghtml='<a href="'+theimg[1]+'" target="'+optlinktarget+'">'
+imghtml+='<img src="'+theimg[0]+'" border="'+imgborderwidth+'">'
+if (theimg[1]!="")
+imghtml+='</a>'
+return imghtml
+}
+
+function modifyimage(loadarea, imgindex){
+if (document.getElementById){
+var imgobj=document.getElementById(loadarea)
+if (imgobj.filters && window.createPopup){
+imgobj.style.filter=filterstring
+imgobj.filters[0].Apply()
+}
+imgobj.innerHTML=returnimgcode(dynimages[imgindex])
+if (imgobj.filters && window.createPopup)
+imgobj.filters[0].Play()
+return false
+}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+</head>
+
+<body><center>
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="4"><img src="images/headlogo.jpg" width="650" height="100"></td>
+  </tr>
+    <tr> 
+      <td colspan="4" height="25"><blockquote>
+          
+        <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><a href="contact.htm" target="_self">Contact</a> 
+          | <a href="experience.htm" target="_self">Experience</a> | <a href="elearning.htm" target="_self">E-Learning</a> 
+          | <a href="portfolio.htm" target="_self">Portfolio</a> | <a href="images/bgarcia_resume.pdf" target="_blank">Resume</a> 
+          | <a href="index.htm" target="_self">Home Page</a></font></p>
+        </blockquote></td>
+    </tr>
+    <tr> 
+      <td colspan="4"><img src="images/botbar.gif" width="700" height="17"></td>
+    </tr>
+    <tr>
+	<td width="150"></td> 
+      
+    <td colspan="2"><font size="2" face="Arial, Helvetica, sans-serif">Examples 
+      of SCORM-compliant Web-Based Training courses hosted on Navy Knowledge On-line. 
+      Mouse Over Thumbnails below to see more information. Click to view sample 
+      (requires FlashPlayer).</font></td>
+	<td width="100"></td>
+	</tr>
+  <tr> 
+    <td colspan="2" height="50"><div align="right"><a href="#" onClick="MM_openBrWindow('popups/est/est.htm','','width=800,height=600')" onMouseOver="return modifyimage('dynloadarea2', 3)"><img src="images/elearn-1est.jpg" alt="Enrollment System Training: Connectivity" width="50" class="nodeclink" border="0"></a></div></td>
+    <td width="400" rowspan="6" valign="middle" background="images/elearn-code1.jpg">
+		<div align="right"></div>
+		<div id="dynloadarea2" style="width:350px;height:400px">	</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="50"><div align="right"><a href="#" onClick="MM_openBrWindow('popups/aecm/aecm.htm','','width=800,height=600')" onMouseOver="return modifyimage('dynloadarea2', 0)"><img src="images/elearn-1aecm.jpg" alt="Airborne Expendable Countermeasures" width="50" class="nodeclink" border="0"></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="50"><div align="right"><a href="#" onClick="MM_openBrWindow('popups/lau7/lau7.htm','','width=800,height=600')" onMouseOver="return modifyimage('dynloadarea2', 1)"><img src="images/elearn-1lau7.jpg" alt="LAU-7C/A &amp; D/A Guided Missile Launcher" width="50" class="nodeclink" border="0"></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="50"><div align="right"><a href="#" onClick="MM_openBrWindow('popups/aim9/aim9.swf','','width=800,height=600')" onMouseOver="return modifyimage('dynloadarea2', 2)"><img src="images/elearn-1aim9.jpg" alt="AIM-9L/M Sidewinder Missile Maintenance" width="50" class="nodeclink" border="0"></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="50"><div align="right"><a href="#" onClick="MM_openBrWindow('popups/Maverick.swf','','width=800,height=600')" onMouseOver="return modifyimage('dynloadarea2', 4)"><img src="images/elearn-1mav.jpg" alt="AGM-65 Maverick Missile" width="50" class="nodeclink" border="0"></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2" height="50"><div align="right"><a href="#" onClick="MM_openBrWindow('popups/parachute/parachute.htm','','width=625,height=625')" onMouseOver="return modifyimage('dynloadarea2', 5)"><img src="images/elearn-1para.jpg" alt="BQM-74E Parachute Maintenance" width="50" class="nodeclink" border="0"></a></div></td>
+    <td>&nbsp;</td>
+  </tr>
+    <tr> 
+      <td colspan="4" height="100"></td>
+    </tr>
+</table>
+</body>
+</html>
